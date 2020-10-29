@@ -1,0 +1,11 @@
+{
+  "bucketName": "my-hexo-bucket-1251971143",
+  "host": [
+    "https://www.tinafang.com (CNAME: www.tinafang.com.cdn.dnsv1.com）"
+  ],
+  "hostName": [
+    "www_tinafang.com"
+  ],
+  "region": "ap-guangzhou",
+  "url": "https://my-hexo-bucket-1251971143.cos-website.ap-guangzhou.myqcloud.com"
+}

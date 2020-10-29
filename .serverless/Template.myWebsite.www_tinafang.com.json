@@ -1,0 +1,9 @@
+{
+  "host": "www.tinafang.com",
+  "origin": "my-hexo-bucket-1251971143.cos-website.ap-guangzhou.myqcloud.com",
+  "cname": "www.tinafang.com.cdn.dnsv1.com",
+  "inputCache": {
+    "base": "{\"host\":\"www.tinafang.com\",\"hostType\":\"cos\",\"serviceType\":\"web\",\"fwdHost\":\"my-hexo-bucket-1251971143.cos-website.ap-guangzhou.myqcloud.com\",\"origin\":\"my-hexo-bucket-1251971143.cos-website.ap-guangzhou.myqcloud.com\",\"fromClientRemark\":\"tencent-website\",\"projectId\":0}",
+    "https": "{\"certId\":\"auE51Zo3\",\"http2\":\"off\",\"httpsType\":4,\"forceSwitch\":-2}"
+  }
+}
