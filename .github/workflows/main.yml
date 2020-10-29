@@ -26,6 +26,8 @@ jobs:
         uses: actions/checkout@v2
       - name: install serverless
         run: sudo npm install -g serverless
+      - name: install hexo
+        run: sudo npm install -g hexo-cli
       - name: build
         run: hexo g
       - name: deploy serverless
