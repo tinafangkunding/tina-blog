@@ -6,11 +6,11 @@ stage: prod # (可选) 用于区分环境信息，默认值是 dev
 
 inputs:
   src:
-    src: ./public
+    #src: ./public
     index: index.html
     error: index.html
-    # dist: ./dist
-    # hook: npm run build
+    dist: ./public
+    hook: npm run build
     # websitePath: ./
   region: ap-guangzhou
   bucketName: my-hexo-bucket

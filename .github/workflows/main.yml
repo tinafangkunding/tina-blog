@@ -28,8 +28,6 @@ jobs:
         run: sudo npm install -g serverless
       - name: install dependency
         run: sudo npm install
-      - name: build
-        run: hexo g
       - name: deploy serverless
         run: sls deploy --debug
         env: # 环境变量
