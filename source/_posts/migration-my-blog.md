@@ -58,6 +58,7 @@ git commit -m "v2"
 https://blog.tinafang.com/2020/09/30/bilibili/
 
 > 注：远端创建了 workflow 的 main.yml 文件后，要记得本地 `git pull` 拉取一下最新的代码。之后再次更新对应的博客文件，然后 `git push`
+> 注2：github actions 需要 `sudo` 安装 serverless framework，否则会报权限不足的错误
 
 ## 小结和展望
 

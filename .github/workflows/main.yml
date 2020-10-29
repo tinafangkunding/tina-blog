@@ -25,7 +25,7 @@ jobs:
       - name: clone local repository
         uses: actions/checkout@v2
       - name: install serverless
-        run: npm install -g serverless
+        run: sudo npm install -g serverless
       - name: build
         run: hexo g
       - name: deploy serverless
