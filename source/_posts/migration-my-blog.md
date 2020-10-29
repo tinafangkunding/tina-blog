@@ -23,8 +23,37 @@ https://blog.tinafang.com，解决问题 4
 ## 步骤
 
 1. 将本地代码提交到 github 远端上
+
+1.在gitHub 上 创建新库 https://github.com/tinafangkunding/tina-blog
+2.终端cd工程文件所在文件目录，
+3.git init
+4.git add -A (进入文件 添加文件,-A表示添加全部文件)
+5.git commit -m “提交说明”
+6.git remote add origin url (该url是你库的url)
+```
+ git remote add origin https://github.com/tinafangkunding/tina-blog.git
+```
+7.git push -u origin master （将本地的仓库提交到github账号里）（可能会输入github的账号和密码） 
+
+刷新后，即可看到代码 https://github.com/tinafangkunding/tina-blog 
+
 2. 本地修改为 v2 的部署方式，配置新域名，并且手动部署成功，指定 cos-bucket（覆盖部署）
-3. 配置 github actions，每次 git push 的时候自动 build 和 deploy
+
+把旧的 serverless.yml 改名，重建一个新的 serverless.yml
+修改配置为 v2 版本，配置参考：
+https://github.com/serverless-components/tencent-website
+
+之后，为新的 blog.tinafang.com 申请证书，半小时之后申请和验证都完成了。
+
+重新部署，在 dns 中加一个 cname 记录。等待 1-2 分钟即可生效了！
+
+此时，再次执行下 
+git add -A
+git commit -m "v2"
+
+执行 $ git push -u origin master 更新到 github 仓库
+
+1. 配置 github actions，每次 git push 的时候自动 build 和 deploy
 
 
 后面的计划：
