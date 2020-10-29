@@ -8,6 +8,8 @@ tags:
 
 tina test for github actions
 
+test for actions - check your page and see if cos url is refreshed
+
 现有博客的一些问题：
 1. 手动构建和发布，比较繁琐，容易误操作
 2. 依赖本地设备，换电脑的时候没法写博客了（电脑快被收了 > <）
