@@ -50,11 +50,21 @@ https://github.com/serverless-components/tencent-website
 此时，再次执行下 
 git add -A
 git commit -m "v2"
+执行 $ git push 更新到 github 仓库
 
-执行 $ git push -u origin master 更新到 github 仓库
+3. 配置 github actions，每次 git push 的时候自动 build 和 deploy
 
-1. 配置 github actions，每次 git push 的时候自动 build 和 deploy
+参考文档 https://cloud.tencent.com/document/product/1154/47290
+https://blog.tinafang.com/2020/09/30/bilibili/
 
+> 注：远端创建了 workflow 的 main.yml 文件后，要记得本地 `git pull` 拉取一下最新的代码。之后再次更新对应的博客文件，然后 `git push`
+
+## 小结和展望
+
+博客搬家之前和之后，在部署流程，和访问者体验上有了提升。
+
+- 部署流程：
+- 访问体验：
 
 后面的计划：
 - [ ] 搭建自己的图床
