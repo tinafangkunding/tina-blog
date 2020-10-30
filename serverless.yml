@@ -18,10 +18,10 @@ inputs:
   #cdn
   hosts:
     - host: blog.tinafang.com
-      async: true
+      async: false # false 时会自动刷新，true 的时候
       area: mainland
       autoRefresh: true
-      onlyRefresh: false
+      onlyRefresh: true #true 时，cdn 只做刷新操作
       https:
         switch: on
         http2: on
