@@ -75,8 +75,21 @@ Next.js 是一个轻量级的 React 服务端渲染应用框架。支持多种�
 
 ### 3. 部署方式
 
-1. 部署到 Vercel，可以参考教程。
-2. 部署到腾讯云 Serverless SSR，待产品上线后补充。
+#### a. 部署到 Vercel，可以参考[教程](https://nextjs.org/learn/basics/create-nextjs-app)
+
+#### b. 部署到腾讯云 Serverless SSR
+
+1. 【前提】已经按照教程搭建了 Next.js 博客，在本地 localhost:3000 可运行，并有自己的 Github 仓库。
+2. 【新建】登录腾讯云，打开 Serverless SSR [控制台](https://console.cloud.tencent.com/ssr)，如果是全新客户会有个授权的流程，授权完成后，点击新建应用，如下图所示。
+![SSR 新建](https://imgbed-bucket-1251971143.cos.ap-guangzhou.myqcloud.com/./1604994564469-ssr-console1.jpg)
+3. 【配置和导入】在新建页面中，填入博客项目名称，由于我本地已有部署好的 next.js 博客及仓库，因此可以直接选择「导入已有项目」。选择对应的代码托管方式，并进行一键授权。
+![导入项目](https://imgbed-bucket-1251971143.cos.ap-guangzhou.myqcloud.com/1604995144841-ssr-console2.png)
+配置完成后，点击部署，在「部署日志」页面查看和等待即可。
+在这个过程中，Serverless SSR 会自动执行 CI 流程，做环境的初始化，安装 Serverless CLI，对项目进行 `npm run build` 构建，并且自动通过 layer 层对依赖进行分离，从而提升部署速度。
+
+4. 【访问】等待约一分钟后，可以看到部署成功，跳转到了配置详情页面。此时点击对应的 URL 或者 「访问应用」 按钮，即可访问并打开博客了！
+![访问页面](https://imgbed-bucket-1251971143.cos.ap-guangzhou.myqcloud.com/./1604995429926-ssr-console3.png)
+至此，一行代码都没有改，我把博客无缝部署到了腾讯云 Serverless SSR 平台上托管。
 
 ## 参考文献
 Next.js + TypeScript 搭建一个简易的博客系统
